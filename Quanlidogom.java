@@ -9,8 +9,10 @@ public class Quanlidogom {
 	 String tendogom;
 	   String namSX;
 	   String masp;
+	   String mausac;
 	   int soluong;
-	public String getTendogom() {
+	   double giatien;
+public String getTendogom() {
 		return tendogom;
 	}
 	public void setTendogom(String tendogom) {
@@ -26,7 +28,13 @@ public class Quanlidogom {
 		return masp;
 	}
 	public void setMasp(String masp) {
-		this.masp =masp;
+		this.masp = masp;
+	}
+	public String getMausac() {
+		return mausac;
+	}
+	public void setMausac(String mausac) {
+		this.mausac = mausac;
 	}
 	public int getSoluong() {
 		return soluong;
@@ -34,13 +42,21 @@ public class Quanlidogom {
 	public void setSoluong(int soluong) {
 		this.soluong = soluong;
 	}
+	public double getGiatien() {
+		return giatien;
+	}
+	public void setGiatien(double giatien) {
+		this.giatien = giatien;
+	}
 public  Quanlidogom() {
 		
 	}
-   public Quanlidogom(String tendogom , String namSX , String masp , int soluong ) {
+   public Quanlidogom(String tendogom , String namSX , String masp , String mausac , int soluong , double giatien ) {
 		  this.tendogom = tendogom ;
 		  this.namSX = namSX ;
 		  this.masp = masp;
+		  this.mausac = mausac;
 		  this.soluong = soluong;
+		  this.giatien = giatien;
 	  }
     }
