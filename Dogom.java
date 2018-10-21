@@ -1,5 +1,6 @@
 package dogom;
 
+import java.awt.RenderingHints.Key;
 import java.text.SimpleDateFormat;
 import java.util.Enumeration;
 import java.util.Scanner;
@@ -32,15 +33,18 @@ public class Dogom {
 			for(int i=0;i<n;i++) {
 				System.out.println("Nhap ten do gom =");
 				String tendogom =key.nextLine();
-				System.out.println("Nam san xuat ");
+				System.out.println("Nam san xuat =");
 				SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd");
 				String namSX=key.nextLine();	
 				System.out.println("Nhap ma san pham =");
 				String masp =key.nextLine();
+				System.out.println("Nhap mau sac =");
+				String mausac=key.nextLine();
 				System.out.println("Nhap so luong =");
 				int soluong=Integer.parseInt(key.nextLine());
-				System.out.println("Nam san xuat ");
-				Quanlidogom b = new Quanlidogom(tendogom,namSX,masp,soluong);
+				System.out.println("Nhap gia tien =");
+				double giatien= Double.parseDouble(key.nextLine());
+				Quanlidogom b = new Quanlidogom(tendogom,namSX,masp,mausac,soluong,giatien);
 				list.add(b);
 			}
 }
