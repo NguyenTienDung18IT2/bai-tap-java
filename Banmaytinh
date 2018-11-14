@@ -1,0 +1,85 @@
+package mailam;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Banmaytinh {
+	Vector<Maytinh> list = new Vector<Maytinh>();
+	public Banmaytinh()
+	{
+		while(true)
+		{
+			System.out.println("");
+			System.out.println("----Quan ly giay----");
+			System.out.println("1. Nhap giay");
+			System.out.println("2. Xem giay");
+			System.out.println("3. Ban giay");
+			int n;
+			Scanner key = new Scanner(System.in);
+			System.out.println("Moi ban chon chuc nang:");
+			n = key.nextInt();
+			switch(n) {
+				case 1: NhapTT();
+					break;
+				case 2: InTT();
+					break;
+				case 3: Inhoadon();
+				    break;
+			}
+		}
+	}
+	public void NhapTT() {
+		Scanner key = new Scanner(System.in);
+		int n;
+     System.out.println("Nhap so luong may tinh :");
+     n=key.nextInt();
+     key.nextLine();
+     for(int i=1;i<=n;i++) {
+    	 System.out.println(" Nhap ten may tinh :");
+    	 String Tenmay=key.nextLine();
+    	 System.out.println(" Nhap hang may tinh :");
+    	 String Hangmay=key.nextLine();
+    	 System.out.println(" Nhap mau sac :");
+    	 String Mausac=key.nextLine();
+    	 System.out.println(" Ngay nhap hang :");
+    	 SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
+    	 String ngaynhaphang=key.nextLine();
+    	 System.out.println(" Nhap so luong :");
+    	 int Soluong=Integer.parseInt(key.nextLine());
+    	 System.out.println(" Nhap don gia :");
+    	 double Dongia=Double.parseDouble(key.nextLine());
+    	 Maytinh a = new Maytinh(Tenmay,Hangmay,Mausac,Soluong,Dongia);
+    	 list.add(a);
+    	 }
+	}
+	public void InTT() {
+		Maytinh temp;
+		for(int i=0;i<this.list.size();i++) {
+			temp = (Maytinh)this.list.get(i);
+ 			System.out.println((i+1)+".Tenmay: "+temp.getTenmay()+", Hangmay:"+temp.getHangmay()+", Mau sau cua may: "+temp.getMausac());
+		}
+	}
+	public void Inhoadon() {
+		Scanner key = new Scanner(System.in);
+		 System.out.println(" Nhap ten may tinh :");
+    	 String Tenmay=key.nextLine();
+    	 System.out.println(" Nhap hang may tinh :");
+    	 String Hangmay=key.nextLine();
+    	 System.out.println(" Nhap mau sac :");
+    	 String Mausac=key.nextLine();
+    	 System.out.println(" Nhap so luong :");
+    	 int Soluong=key.nextInt();
+    	 System.out.println(" Nhap don gia :");
+    	 double Dongia=key.nextDouble();
+    	 double Tien;
+    	 Tien=Soluong*Dongia;
+    	 System.out.println("Gia san pham la: "+Tien+" VND.");
+ 		System.out.println("--Cam on quy khac--");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        new Banmaytinh();
+	}
+}
+    	 
+    	 
