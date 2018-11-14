@@ -10,10 +10,10 @@ public class Banmaytinh {
 		while(true)
 		{
 			System.out.println("");
-			System.out.println("----Quan ly giay----");
-			System.out.println("1. Nhap giay");
-			System.out.println("2. Xem giay");
-			System.out.println("3. Ban giay");
+			System.out.println("----Quan ly May tinh----");
+			System.out.println("1. Nhap May tinh");
+			System.out.println("2. Xem May tinh");
+			System.out.println("3. Ban May tinh ");
 			int n;
 			Scanner key = new Scanner(System.in);
 			System.out.println("Moi ban chon chuc nang:");
