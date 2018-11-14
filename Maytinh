@@ -1,0 +1,46 @@
+package mailam;
+
+public class Maytinh {
+   String Tenmay;
+   String Hangmay;
+   String Mausac;
+   int Soluong;
+   double Dongia;
+public String getTenmay() {
+	return Tenmay;
+}
+public void setTenmay(String tenmay) {
+	Tenmay = tenmay;
+}
+public String getHangmay() {
+	return Hangmay;
+}
+public void setHangmay(String hangmay) {
+	Hangmay = hangmay;
+}
+public String getMausac() {
+	return Mausac;
+}
+public void setMausac(String mausac) {
+	Mausac = mausac;
+}
+public int getSoluong() {
+	return Soluong;
+}
+public void setSoluong(int soluong) {
+	Soluong = soluong;
+}
+public double getDongia() {
+	return Dongia;
+}
+public void setDongia(double dongia) {
+	Dongia = dongia;
+}
+   public  Maytinh(String Tenmay, String Hangmay , String Mausac , int Soluong, double Dongia) {
+   this.Tenmay=Tenmay;
+   this.Hangmay=Hangmay;
+   this.Mausac=Mausac;
+   this.Soluong=Soluong;
+   this.Dongia=Dongia;
+ }   
+}
